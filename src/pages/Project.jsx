@@ -10,11 +10,23 @@ const Project = () => {
       des: '  HTML | CSS | BOOTSTRAP | JAVASCRIPT | API ',
     },
     {
-      title: 'Country API',
+      title: 'Portfolio Website',
       des: '  HTML | CSS | BOOTSTRAP | JAVASCRIPT | API ',
     },
     {
-      title: 'Country API',
+      title: 'Emoji Changer',
+      des: '  HTML | CSS | BOOTSTRAP | JAVASCRIPT | API ',
+    },
+    {
+      title: 'Card Adviser',
+      des: '  HTML | CSS | BOOTSTRAP | JAVASCRIPT | API ',
+    },
+    {
+      title: 'Task Keeper',
+      des: '  HTML | CSS | BOOTSTRAP | JAVASCRIPT | API ',
+    },
+    {
+      title: 'College Website Clone',
       des: '  HTML | CSS | BOOTSTRAP | JAVASCRIPT | API ',
     }
   ]

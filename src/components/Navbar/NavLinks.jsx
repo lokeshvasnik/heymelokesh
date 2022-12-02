@@ -6,20 +6,21 @@ const NavLinks = () => {
  
   return (
     <>
-       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
                 <span>#</span>Home</Link>
              </li>
              <li className="nav-item">
-                <a className="nav-link" href="/"> <span>#</span>About Me</a>
+                <Link className="nav-link" to="/about"> <span>#</span>About Me</Link>
             </li>
              <li className="nav-item">
                 <Link className="nav-link" to="/projects"> <span>#</span>Projects</Link>
              </li>
              <li className="nav-item">
-                <a className="nav-link" href="/"> <span>#</span>Contact</a>
-             </li>
+                <a className="nav-link" href="/contact"> <span>#</span>Contact</a>
+             </li> 
+            
      </ul>
 
     </>

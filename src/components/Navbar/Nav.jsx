@@ -5,7 +5,7 @@ import './Nav.css';
 
 const Nav = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid sticky-top ">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
