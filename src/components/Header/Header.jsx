@@ -1,5 +1,6 @@
 import React from 'react';
 import profile from '../../assets/profile.png'
+
 const Header = () => {
   return (
     <div className='container'>
@@ -10,10 +11,10 @@ const Header = () => {
             <p>
               He crafts responsive websites where technologies meet creativity
             </p>
-            <button>Contact Me</button>
+            <button className='custom__button'>Contact Me</button>
           </div>
         </div>
-        <div className="col-lg-6 d-flex justify-content-center align-items-end">
+        <div className="col-lg-6 d-flex justify-content-center align-items-center">
             <img src={profile} alt="" />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './NavLinks.css'
 
 const NavLinks = () => {
@@ -7,14 +8,14 @@ const NavLinks = () => {
     <>
        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                <span>#</span>Home</a>
+                <Link className="nav-link active" aria-current="page" to="/">
+                <span>#</span>Home</Link>
              </li>
              <li className="nav-item">
-                <a className="nav-link" href="/"> <span>#</span>Link</a>
+                <a className="nav-link" href="/"> <span>#</span>About Me</a>
             </li>
              <li className="nav-item">
-                <a className="nav-link" href="/"> <span>#</span>About Me</a>
+                <Link className="nav-link" to="/projects"> <span>#</span>Projects</Link>
              </li>
              <li className="nav-item">
                 <a className="nav-link" href="/"> <span>#</span>Contact</a>
