@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
+import Cursor from '../../Cursor';
 import NavLink from '../Navbar/NavLinks';
 import './Nav.css';
 
 const Nav = () => {
   return (
     <div className="container-fluid sticky-top ">
+      <Cursor/>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">

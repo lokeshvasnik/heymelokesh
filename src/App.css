@@ -2,9 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 /* Google font 2 */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+:root {
+  --primary: #fff;
+  --secondary: #2c3036;
+  --dark__black: #000;
+  --unique: #64ffda;
+}
+
 * {
-  color: #fff;
-  background-color: #2c3036;
+  color: var(--primary);
+  background-color: var(--secondary);
 }
 
 /* * Hide scrollbar for Chrome Browswer Firefox */
@@ -21,17 +29,22 @@ html {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #000;
-  background: #fff;
+  color: var(--dark__black);
+  background: var(--primary);
 }
 
 ::selection {
-  color: #000;
-  background: #fff;
+  color: var(--dark__black);
+  background: var(--primary);
 }
 
 h1 {
   font-family: 'Zen Dots', cursive;
+}
+
+h4 {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
 }
 
 p {
@@ -39,8 +52,24 @@ p {
   font-weight: 700;
 }
 
+p > a {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+p > a:hover {
+  color: var(--unique);
+}
+
 .custom__button {
-  border: 1px solid #fff;
+  border: 1px solid var(--primary);
   text-align: center;
-  padding: 0.5rem 1rem 0.5px 1rem;
+  padding: 0.5rem 1rem;
+}
+
+span {
+  color: var(--unique);
 }

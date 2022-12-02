@@ -1,9 +1,9 @@
-import React from 'react'
-import Card from '../components/Cards/Card'
-import Nav from '../components/Navbar/Nav'
+import React from 'react';
+import Card from '../components/Cards/Card';
+import Nav from '../components/Navbar/Nav';
+import Cursor from '../Cursor';
 
 const Project = () => {
-
   const data = [
     {
       title: 'Country API',
@@ -28,15 +28,16 @@ const Project = () => {
     {
       title: 'College Website Clone',
       des: '  HTML | CSS | BOOTSTRAP | JAVASCRIPT | API ',
-    }
-  ]
+    },
+  ];
 
   return (
     <>
-    <Nav />   
-    <Card data={data}/>
+      <Cursor />
+      <Nav />
+      <Card data={data} />
     </>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
