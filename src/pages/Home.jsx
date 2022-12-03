@@ -4,7 +4,9 @@ import Header from '../components/Header/Header';
 import Quote from '../components/Quotes/Quote';
 import Cursor from '../Cursor';
 
+
 const Home = () => {
+ 
   return (
     <>
     <Cursor/>

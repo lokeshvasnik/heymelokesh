@@ -16,7 +16,7 @@ const AboutMe = () => {
 
             <p>Let's talk about my interest:👇️</p>
 
-            <p>
+         
               <p>✅ I love development and most of Web Development❤️</p>
               <p>
                 ✅ Cant say I love editing but I've made more than 50+ templates
@@ -27,7 +27,8 @@ const AboutMe = () => {
                 ✅ Love to write blogs and practice code [COMPLETED 100DAYS OF
                 CODE CHALLENGE]
               </p>
-                <ul className='my-2'>
+           
+            <ul className='my-2'>
                   ⭐Tech Stack: <span>HTML(5)</span>, CSS(3) , <span>SASS</span> , BOOTSTRAP(5), <span>JAVASCRIPT</span>, FIGMA
                 </ul>
                 <ul>
@@ -36,7 +37,7 @@ const AboutMe = () => {
                 </ul>
                 <ul>⭐Good in Responsive Web Design and analyzing.</ul>
                 <ul>⭐Proficiency in code optimization.</ul>
-            </p>
+              
 
             <Button className="custom__button">Contact Me</Button>
           </div>
