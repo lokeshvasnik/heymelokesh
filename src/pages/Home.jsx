@@ -10,7 +10,7 @@ const Home = () => {
     <Cursor/>
       <Nav />
       <Header />
-     
+      <Quote/>
     </>
   );
 };
