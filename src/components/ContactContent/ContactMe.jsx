@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
+import Footer from '../Footer/Footer';
 import { SiMinutemailer } from 'react-icons/si';
 import { FaDiscord } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -57,6 +58,7 @@ const ContactMe = () => {
           </Button>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

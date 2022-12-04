@@ -16,8 +16,7 @@ const Header = () => {
               Hey there! Lokesh here I'm from India🇮🇳 a computer science student
               and I have been developing various websites, especially on the
               Front End using <span>HTML</span>,<span>CSS</span>,
-              <span>JAVASCRIPT </span>&<span> REACT,</span> and also working as
-              a freelancer on fiver. Working as a
+              <span>JAVASCRIPT </span>&<span> REACT,</span> and also working as a
               freelancer on <span>FIVER</span>
             </p>
             <Button className="custom__button">Contact Me</Button>

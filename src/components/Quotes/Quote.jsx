@@ -1,34 +1,31 @@
-import React from 'react';
-import { getDocs, collection } from 'firebase/firestore';
-import { useState, useEffect } from 'react';
-import { db } from '../../config/firebase';
+import React, { useEffect, useState } from 'react';
 import './Quote.css';
 
 const Quote = () => {
-  // Storing the data into this variable
-  const [quote, setQuote] = useState([]);
+  // * Calling api
 
-  // * Collection Ref
-  const collectionRef = collection(db, 'quotes');
-
-  // * get collection data
+  const [quotes, setQuotes] = useState([]);
+  const [isLoading, setisLoading] = useState(false);
 
   useEffect(() => {
-    const getData = async () => {
-      const data = await getDocs(collectionRef);
+    const interval = setInterval(async () => {
+      const response = await fetch(
+        'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single'
+      );
 
-      setQuote(data.docs.map((items) => ({ ...items.data(), id: items.id })));
-    };
+      const data = await response.json();
 
-    getData();
+      setQuotes(data);
+    }, 8000);
+
+    return () => clearInterval(interval);
+
   }, []);
 
   return (
     <div className="container my-4">
       <div className="box">
-        {quote.map((item, index) => (
-          <p key={index}>{item.title}</p>
-        ))}
+        {setisLoading && <p>{quotes.joke}</p>}
       </div>
     </div>
   );
