@@ -38,6 +38,8 @@ html {
   background: var(--primary);
 }
 
+/* Heading tag  */
+
 h1 {
   font-family: 'Zen Dots', cursive;
 }
@@ -47,6 +49,7 @@ h4 {
   font-weight: 700;
 }
 
+/* About me paragraphs */
 p {
   font-family: 'Fira Code', monospace;
   font-weight: 700;
@@ -64,10 +67,17 @@ p > a:hover {
   color: var(--unique);
 }
 
+ul {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  color: var(--primary);
+}
+
 span {
   color: var(--unique);
 }
 
+/* Custom Button */
 .custom__button {
   border: 1px solid var(--primary);
   text-align: center;

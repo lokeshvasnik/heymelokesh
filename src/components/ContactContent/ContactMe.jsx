@@ -14,9 +14,9 @@ const ContactMe = () => {
           <div className="d-flex border-end justify-content-center align-items-start flex-column p-5">
             <p>
               I’m interested in freelance opportunities. However, if you have
-              other request or question, don’t hesitate to contact me
+              other request or question, don’t hesitate to contact me!!
             </p>
-
+    
             <Button className="custom__button">Contact Me</Button>
           </div>
         </div>
@@ -24,8 +24,9 @@ const ContactMe = () => {
           <div>
             <h4>Message Me Here</h4>
             <p>
+                <FaDiscord size={30} /> 
               <a href="https://discord.com/">
-                <FaDiscord /> lokya
+              lokya
               </a>
             </p>
             <p>

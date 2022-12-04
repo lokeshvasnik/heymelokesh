@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // Something Private
 const firebaseConfig = {
-  apiKey: 'AIzaSyC65STYfQPM2JkTF3gIuUaFrhYwrfMoszI',
-  authDomain: 'portfolio-2d224.firebaseapp.com',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_KEY,
   projectId: 'portfolio-2d224',
   storageBucket: 'portfolio-2d224.appspot.com',
   messagingSenderId: '614958110750',
-  appId: '1:614958110750:web:ed8eff3e9a87b95edd760f',
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 // Initialize Firebase
