@@ -83,3 +83,10 @@ span {
   text-align: center;
   padding: 0.5rem 1rem;
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}

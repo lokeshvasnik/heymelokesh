@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/logo.png';
 import Cursor from '../../Cursor';
 import NavLink from '../Navbar/NavLinks';
+import hamburger from '../../assets/hamburger.png'
 import './Nav.css';
 
 const Nav = () => {
@@ -22,7 +23,9 @@ const Nav = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span>
+              <img src={hamburger} alt="" />
+            </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <NavLink />
