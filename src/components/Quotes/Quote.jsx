@@ -10,7 +10,7 @@ const Quote = () => {
   useEffect(() => {
     const interval = setInterval(async () => {
       const response = await fetch(
-        'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single'
+        'https://api.quotable.io/random?maxLength=50'
       );
 
       const data = await response.json();
@@ -25,7 +25,7 @@ const Quote = () => {
   return (
     <div className="container my-4">
       <div className="box">
-        {setisLoading && <p>{quotes.joke}</p>}
+        {setisLoading && <p>{quotes.content}</p>}
       </div>
     </div>
   );
