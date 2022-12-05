@@ -1,18 +1,23 @@
 import React from 'react';
-import logo from '../../assets/logo.png';
+import logo1 from '../../assets/logo1.png';
 import Cursor from '../../Cursor';
 import NavLink from '../Navbar/NavLinks';
 import hamburger from '../../assets/hamburger.png'
 import './Nav.css';
 
 const Nav = () => {
+
+  const style = {
+    width: '60px'
+  }
+
   return (
     <div className="container-fluid sticky-top ">
       <Cursor/>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            <img src={logo} alt="logo" />
+            <img style={style} src={logo1} alt="logo" />
           </a>
           <button
             className="navbar-toggler"

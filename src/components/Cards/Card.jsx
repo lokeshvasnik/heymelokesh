@@ -1,6 +1,9 @@
 import React from 'react';
-import './Card.css';
 import wallpaper from '../../assets/wallpaper.png';
+import github from '../../assets/github.svg'
+import files from '../../assets/files.svg'
+import './Card.css';
+
 
 const Card = (props) => {
   const data = props.data;
@@ -18,7 +21,12 @@ const Card = (props) => {
               <div className="card-body">
                 <h5 className="card-title">{items.title}</h5>
                 <p className="card-text">{items.des}</p>
+                <div className='d-flex justify-content-between'>
+                <img src={github} alt="" />
+                <img src={files} alt="" />
               </div>
+              </div>
+            
             </div>
           </div>
         ))}
