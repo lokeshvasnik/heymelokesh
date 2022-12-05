@@ -16,7 +16,7 @@ const Nav = () => {
       <Cursor/>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand rotate" href="/">
             <img style={style} src={logo1} alt="logo" />
           </a>
           <button
