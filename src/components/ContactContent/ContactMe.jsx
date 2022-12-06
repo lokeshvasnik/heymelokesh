@@ -5,7 +5,6 @@ import { SiMinutemailer } from 'react-icons/si';
 import { FaDiscord } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { SiFiverr } from 'react-icons/si';
-import { FaInstagram } from 'react-icons/fa';
 
 const ContactMe = () => {
   return (
@@ -17,48 +16,60 @@ const ContactMe = () => {
               I’m interested in freelance opportunities. However, if you have
               other request or question, don’t hesitate to contact me!!
             </p>
-    
+
             <Button className="custom__button">Contact Me</Button>
           </div>
         </div>
-        <div className="col-lg-6 d-flex justify-content-between align-items-center flex-column">
-          <div>
-            <h4>Message Me Here</h4>
-            <p>
-                <FaDiscord size={30} /> 
-              <a href="https://discord.com/">
-              lokya
-              </a>
-            </p>
-            <p>
-              <SiFiverr className="mr-2" size={30} />
-              <a href="https://fiver.com/">
-                https://www.fiverr.com/share/AQbvKa
-              </a>
-            </p>
-            <p>
-              <FaLinkedin className="mr-2" size={30} />
-              <a href="https://www.linkedin.com/in/lokesh-vasnik">
-                https://www.linkedin.com/in/lokesh-vasnik
-              </a>
-            </p>
+        <div className="col-lg-6  d-flex justify-content-center align-items-center flex-column ">
+          <h4>Message Me Here</h4>
+          <div className="px-4 my-4 py-2 d-flex justify-content-evenly align-items-center text-center ">
+            <div className="row">
+              <div className="col-md-4 ">
+                <div>
+                  <p>
+                    <FaDiscord size={30} />
+                  </p>
+                  <p>
+                    <a href="https://discord.com/">lokya</a>
+                  </p>
+                </div>
+              </div>
 
-            <p>
-              <FaInstagram className="mr-2" size={30} />
-              <a href="https://www.instagram.com/lokeshvasnik1602/">
-                https://www.instagram.com/lokeshvasnik1602/
-              </a>
-            </p>
+              <div className="col-md-4">
+                <div>
+                  <p>
+                    <SiFiverr className="mr-2" size={30} />
+                  </p>
+
+                  <p>
+                    <a href="https://fiver.com/">lokesh vasnik</a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-md-4">
+                <div>
+                  <p>
+                    <FaLinkedin className="mr-2" size={30} />
+                  </p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/lokesh-vasnik">
+                      Lokesh Vasnik
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <Button>
+          <div>
             <h4>Support Me Here</h4>
             <p>
               <SiMinutemailer size={30} /> https://www.fiverr.com/share/AQbvKa
             </p>
-          </Button>
+          </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

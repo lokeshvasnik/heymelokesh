@@ -27,7 +27,7 @@ const Quote = () => {
   return (
     <div className="container my-4">
       <div className="box">
-        <p>Keep smiling, because life is a beautiful thing and there's so much to smile about.</p>
+        <p className='py-4'> "If you want to walk fast, walk alone. But if you want to walk far, walk together"</p>
       </div>
     </div>
   );
