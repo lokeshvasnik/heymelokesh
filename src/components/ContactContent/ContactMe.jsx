@@ -17,55 +17,50 @@ const ContactMe = () => {
               other request or question, don’t hesitate to contact me!!
             </p>
 
+            <p>
+              Support Me Here {'=>'}
+              <a href="https://www.fiverr.com/share/XEqwam">
+               Fiver Gig
+              </a>
+            </p>
+
             <Button className="custom__button">Contact Me</Button>
           </div>
         </div>
         <div className="col-lg-6  d-flex justify-content-center align-items-center flex-column ">
           <h4>Message Me Here</h4>
-          <div className="px-4 my-4 py-2 d-flex justify-content-evenly align-items-center text-center ">
+          <div className="px-4 my-4 py-2 d-flex align-items-center text-center ">
             <div className="row">
               <div className="col-md-4 ">
-                <div>
-                  <p>
-                    <FaDiscord size={30} />
-                  </p>
-                  <p>
-                    <a href="https://discord.com/">lokya</a>
-                  </p>
-                </div>
+                <p>
+                  <FaDiscord size={30} />
+                </p>
+                <p>
+                  <a href="https://discord.com/">lokya</a>
+                </p>
               </div>
 
               <div className="col-md-4">
-                <div>
-                  <p>
-                    <SiFiverr className="mr-2" size={30} />
-                  </p>
+                <p>
+                  <SiFiverr className="mr-2" size={40} />
+                </p>
 
-                  <p>
-                    <a href="https://fiver.com/">lokesh vasnik</a>
-                  </p>
-                </div>
+                <p>
+                  <a href="https://fiver.com/">lokesh vasnik</a>
+                </p>
               </div>
 
               <div className="col-md-4">
-                <div>
-                  <p>
-                    <FaLinkedin className="mr-2" size={30} />
-                  </p>
-                  <p>
-                    <a href="https://www.linkedin.com/in/lokesh-vasnik">
-                      Lokesh Vasnik
-                    </a>
-                  </p>
-                </div>
+                <p>
+                  <FaLinkedin className="mr-2" size={30} />
+                </p>
+                <p>
+                  <a href="https://www.linkedin.com/in/lokesh-vasnik">
+                    Lokesh Vasnik
+                  </a>
+                </p>
               </div>
             </div>
-          </div>
-          <div>
-            <h4>Support Me Here</h4>
-            <p>
-              <SiMinutemailer size={30} /> https://www.fiverr.com/share/AQbvKa
-            </p>
           </div>
         </div>
       </div>
