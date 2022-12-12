@@ -7,10 +7,13 @@ import { collection, getDocs } from "firebase/firestore";
 import "./Card.css";
 
 const Card = () => {
+  // Data base refence
   const feesCollectionRef = collection(db, "cards");
 
+  // Cards state
   const [cards, setCards] = useState([]);
 
+  // On load each card
   useEffect(() => {
     const getCards = async () => {
       const data = await getDocs(feesCollectionRef);
@@ -29,14 +32,19 @@ const Card = () => {
             className="col d-flex justify-content-center align-items-center"
             key={index}
           >
+            {/* Card */}
             <div className="card">
               <img src={items.link} className="card-img-top" alt="img" />
               <div className="card-body">
                 <h5 className="card-title">{items.title}</h5>
                 <p className="card-text">{items.des}</p>
                 <div className="d-flex justify-content-between">
-                  <img src={github} alt="" />
-                  <img src={files} alt="" />
+                  <a href={items.repo}>
+                    <img src={github} alt="" />
+                  </a>
+                  <a href={items.website} target="_blank">
+                    <img src={files} alt="" />
+                  </a>npm
                 </div>
               </div>
             </div>
