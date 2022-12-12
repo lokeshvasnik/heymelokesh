@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import github from '../../assets/github.svg';
-import files from '../../assets/files.svg';
-import { db } from '../../config/firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import React, { useEffect, useState } from "react";
+import github from "../../assets/github.svg";
+import files from "../../assets/files.svg";
+import { db } from "../../config/firebase";
+import { collection, getDocs } from "firebase/firestore";
 
-import './Card.css';
+import "./Card.css";
 
 const Card = () => {
-  const feesCollectionRef = collection(db, 'cards');
+  const feesCollectionRef = collection(db, "cards");
 
   const [cards, setCards] = useState([]);
-
 
   useEffect(() => {
     const getCards = async () => {
@@ -31,7 +30,11 @@ const Card = () => {
             key={index}
           >
             <div className="card">
-              <img src={items.link} className="card-img-top" alt="img" />
+              <img
+                src="../../assets/logo.png"
+                className="card-img-top"
+                alt="img"
+              />
               <div className="card-body">
                 <h5 className="card-title">{items.title}</h5>
                 <p className="card-text">{items.des}</p>

@@ -19,9 +19,7 @@ const ContactMe = () => {
 
             <p>
               Support Me Here {'=>'}
-              <a href="https://www.fiverr.com/share/XEqwam">
-               Fiver Gig
-              </a>
+              <a href="https://www.fiverr.com/share/XEqwam">Fiver Gig</a>
             </p>
 
             <Button className="custom__button">Contact Me</Button>
@@ -29,33 +27,28 @@ const ContactMe = () => {
         </div>
         <div className="col-lg-6  d-flex justify-content-center align-items-center flex-column ">
           <h4>Message Me Here</h4>
-          <div className="px-4 my-4 py-2 d-flex align-items-center text-center ">
-            <div className="row">
+          <div className="px-4 my-4 py-2 ">
+            <div className="row d-flex align-items-center text-center flex-column">
               <div className="col-md-4 ">
                 <p>
-                  <FaDiscord size={30} />
-                </p>
-                <p>
-                  <a href="https://discord.com/">lokya</a>
-                </p>
-              </div>
-
-              <div className="col-md-4">
-                <p>
-                  <SiFiverr className="mr-2" size={40} />
-                </p>
-
-                <p>
-                  <a href="https://fiver.com/">lokesh vasnik</a>
+                  <a href="https://discord.com/">
+                    <FaDiscord size={30} /> lokya
+                  </a>
                 </p>
               </div>
 
               <div className="col-md-4">
                 <p>
-                  <FaLinkedin className="mr-2" size={30} />
+                  <a href="https://fiver.com/">
+                    <SiFiverr className="mr-2" size={40} /> lokesh vasnik
+                  </a>
                 </p>
+              </div>
+
+              <div className="col-md-4">
                 <p>
                   <a href="https://www.linkedin.com/in/lokesh-vasnik">
+                    <FaLinkedin className="mr-2" size={30} />
                     Lokesh Vasnik
                   </a>
                 </p>
