@@ -30,11 +30,7 @@ const Card = () => {
             key={index}
           >
             <div className="card">
-              <img
-                src="../../assets/logo.png"
-                className="card-img-top"
-                alt="img"
-              />
+              <img src={items.link} className="card-img-top" alt="img" />
               <div className="card-body">
                 <h5 className="card-title">{items.title}</h5>
                 <p className="card-text">{items.des}</p>
