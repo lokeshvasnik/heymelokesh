@@ -26,7 +26,7 @@ const Card = () => {
 
   return (
     <>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+      <div className={`row row-cols-1 row-cols-md-3 g-4 `}>
         {cards.map((items, index) => (
           <div
             className="col d-flex justify-content-center align-items-center"
@@ -44,7 +44,7 @@ const Card = () => {
                   </a>
                   <a href={items.website} target="_blank">
                     <img src={files} alt="" />
-                  </a>npm
+                  </a>
                 </div>
               </div>
             </div>
